@@ -1,0 +1,446 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-19 10:18+0100\n"
+"PO-Revision-Date: 2015-03-11 14:53+0100\n"
+"Last-Translator: Sascha Rösler <sa-roelser@t-online.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: lib/Vermeldungen/Controller/Admin.php:69
+#: lib/Vermeldungen/Controller/Admin.php:120
+msgid "ID is missing."
+msgstr "Die ID fehlt"
+
+#: lib/Vermeldungen/Controller/Ajax.php:25
+#: lib/Vermeldungen/Controller/Ajax.php:90
+#: lib/Vermeldungen/Controller/Ajax.php:290
+msgid "There is no valid name!"
+msgstr "Der Name ist ungültig!"
+
+#: lib/Vermeldungen/Controller/Ajax.php:27
+msgid "There is no valid date!"
+msgstr "Das Datum ist ungültig!"
+
+#: lib/Vermeldungen/Controller/Ajax.php:29
+msgid "There is no valid time!"
+msgstr "Die Zeit ist ungültig!"
+
+#: lib/Vermeldungen/Controller/Ajax.php:39
+#: lib/Vermeldungen/Controller/Ajax.php:98
+msgid "News has been added successfully."
+msgstr "Die Vermeldung wurde erfolgreich hinzugefügt"
+
+#: lib/Vermeldungen/Controller/Ajax.php:65
+#: lib/Vermeldungen/Controller/Ajax.php:123
+#: lib/Vermeldungen/Controller/Ajax.php:178
+#: lib/Vermeldungen/Controller/Ajax.php:229
+#: lib/Vermeldungen/Controller/Ajax.php:259
+#: lib/Vermeldungen/Controller/Ajax.php:321
+#: lib/Vermeldungen/Controller/Ajax.php:351
+msgid "missing $id"
+msgstr "es fehlt $id"
+
+#: lib/Vermeldungen/Controller/Ajax.php:73
+#: lib/Vermeldungen/Controller/Ajax.php:156
+#: lib/Vermeldungen/Controller/Ajax.php:165
+msgid "News has been removed successfully."
+msgstr "Die Vermeldung wurde erfolgreich gelöscht."
+
+#: lib/Vermeldungen/Controller/Ajax.php:136
+msgid "Data has been removed successfully."
+msgstr "Die Vermeldung wurde erfolgreich gelöscht."
+
+#: lib/Vermeldungen/Controller/Ajax.php:190
+#: lib/Vermeldungen/Controller/Ajax.php:213
+msgid "Template has been removed successfully."
+msgstr "Die Vorlage wurde erfolgreich gelöscht."
+
+#: lib/Vermeldungen/Controller/Ajax.php:298
+msgid "Output has been added successfully."
+msgstr "Die Ausgabe wurde erfolgreich hinzugefügt"
+
+#: lib/Vermeldungen/Controller/Ajax.php:334
+#: lib/Vermeldungen/Controller/Ajax.php:389
+msgid "Output has been removed successfully."
+msgstr "Die Ausgabe wurde erfolgreich gelöscht."
+
+#: lib/Vermeldungen/Controller/Ajax.php:362
+msgid "Output has been edited successfully."
+msgstr "Das Ausgabe wurde erfolgreich bearbeitet."
+
+#: lib/Vermeldungen/Handler/GeneralEdit.php:39
+#: lib/Vermeldungen/Handler/Template.php:40
+#: lib/Vermeldungen/Handler/Edit.php:39
+#: lib/Vermeldungen/Handler/TemplateNews.php:50
+#, php-format
+msgid "News with id %s not found"
+msgstr "Vermeldung mit der ID %s konnte nicht gefunden werden"
+
+#: lib/Vermeldungen/Handler/Template.php:103
+msgid "This Attribute does already exist!"
+msgstr "Dieses Attribut existiert schon!"
+
+#: lib/Vermeldungen/Handler/Template.php:119
+msgid "Template has been edited successfully."
+msgstr "Die Vorage wurde erfolgreich bearbeitet."
+
+#: lib/Vermeldungen/Handler/TemplateNews.php:46
+#: lib/Vermeldungen/Handler/TemplateNews.php:61
+msgid "There is no class given"
+msgstr "Es wurde keine Klasse angegeben."
+
+#: lib/Vermeldungen/Version.php:15 lib/Vermeldungen/Version.php:17
+#: lib/Vermeldungen/Api/Account.php:33
+msgid "Vermeldungen"
+msgstr "Vermeldungen"
+
+#: lib/Vermeldungen/Version.php:16
+msgid "Creat Vermeldungenlist"
+msgstr "Erstelle Vermeldungsliste"
+
+#: lib/Vermeldungen/Version.php:36
+msgid "vermeldungen main Hooks"
+msgstr "Vermeldungen main Hooks"
+
+#: lib/Vermeldungen/Version.php:40
+msgid "Users view"
+msgstr "Ausgabe"
+
+#: lib/Vermeldungen/Api/Template.php:15
+msgid "The News doesn't exist!"
+msgstr "Die Vermeldung existiert nicht!"
+
+#: lib/Vermeldungen/Api/Template.php:82
+msgid "No Template selected."
+msgstr "Keine Vorlage ausgewählt"
+
+#: lib/Vermeldungen/Api/Admin.php:21
+msgid "Standard View"
+msgstr "Zeige Ausgabe \"Homepage\""
+
+#: lib/Vermeldungen/Api/Admin.php:25
+msgid "Standard Print"
+msgstr "Drucken \"Aushang\""
+
+#: lib/Vermeldungen/Api/Admin.php:29
+msgid "View Output "
+msgstr "Zeige Ausgabe "
+
+#: lib/Vermeldungen/Api/Admin.php:31
+msgid "Print "
+msgstr "Drucken"
+
+#: lib/Vermeldungen/Api/Admin.php:34
+msgid "Manage Outputs"
+msgstr "Ausgabekanäle verwalten"
+
+#: lib/Vermeldungen/Api/Admin.php:40 lib/Vermeldungen/Api/Admin.php:41
+msgid "Main"
+msgstr "Hauptseite"
+
+#: lib/Vermeldungen/Api/Admin.php:49
+msgid "View"
+msgstr "Ausgabe"
+
+#: lib/Vermeldungen/Api/Admin.php:50
+msgid "show the userlist"
+msgstr "Zeigt die Benutzeransicht"
+
+#: lib/Vermeldungen/Api/Admin.php:59
+msgid "Templates"
+msgstr "Vorlagen"
+
+#: lib/Vermeldungen/Api/Admin.php:63
+msgid "New Template"
+msgstr "Neue Vorlage"
+
+#: lib/Vermeldungen/Api/Admin.php:65
+msgid "Show Templates"
+msgstr "Zeige Vorlagen"
+
+#: lib/Vermeldungen/Api/Admin.php:71
+msgid "Print"
+msgstr "Drucken"
+
+#: lib/Vermeldungen/Api/Admin.php:72
+msgid "Download the list"
+msgstr "Die Liste herunterladen"
+
+#: lib/Vermeldungen/Api/Admin.php:116
+msgid "Please insert a news!"
+msgstr "Bitte geben Sie eine Vermeldung ein!"
+
+#: lib/Vermeldungen/Api/Admin.php:118
+msgid "Please insert an output!"
+msgstr "Bitte geben Sie eine Ausgabe an"
+
+#: templates/User/view.tpl:13
+msgid "Admin page"
+msgstr "Administrationsseite"
+
+#: templates/Ajax/Output.tpl:4
+msgid "Id"
+msgstr "Id"
+
+#: templates/Ajax/Output.tpl:5 templates/Template/List.tpl:10
+#: templates/Admin/OutputManager.tpl:13
+msgid "Name"
+msgstr "Name"
+
+#: templates/Ajax/Output.tpl:6 templates/Admin/OutputManager.tpl:14
+msgid "Page Format"
+msgstr "Seiten Format"
+
+#: templates/Ajax/General.tpl:4 templates/Ajax/Vermeldungen.tpl:6
+#: templates/Admin/DataEdit.tpl:35 templates/Admin/Main.tpl:23
+#: templates/Admin/Main.tpl:70 templates/Admin/Main.tpl:103
+#: templates/Admin/Main.tpl:150 templates/Admin/GeneralEdit.tpl:23
+msgid "Text"
+msgstr "Text"
+
+#: templates/Ajax/General.tpl:6 templates/Ajax/Vermeldungen.tpl:8
+#: templates/Admin/Main.tpl:25 templates/Admin/Main.tpl:105
+msgid "Standard"
+msgstr "Aushang/ Homepage"
+
+#: templates/Ajax/Vermeldungen.tpl:4 templates/Admin/DataEdit.tpl:29
+#: templates/Admin/Main.tpl:21 templates/Admin/Main.tpl:68
+msgid "Date"
+msgstr "Datum"
+
+#: templates/Ajax/Vermeldungen.tpl:5 templates/Admin/DataEdit.tpl:32
+#: templates/Admin/Main.tpl:22 templates/Admin/Main.tpl:69
+msgid "Time"
+msgstr "Uhrzeit"
+
+#: templates/Template/TemplateEdit.tpl:1 templates/Template/TemplateEdit.tpl:9
+msgid "Template Editor"
+msgstr "Vorlagen Editor"
+
+#: templates/Template/TemplateEdit.tpl:12
+msgid "Name:"
+msgstr "Name:"
+
+#: templates/Template/TemplateEdit.tpl:16
+msgid ""
+"You can insert your template via HTML. For Variables, you has to use &#123;"
+"YOUR VARIABLE&#125;. This Name you has to fill in the attribute list below."
+msgstr ""
+"Sie können Ihre Vorlage mit HTML schreiben. Für Variablen nutzen Sie &#123;"
+"IHRE VARIABLE&#125;. Diese müssen Sie dann unten in der Attributliste "
+"angeben."
+
+#: templates/Template/TemplateEdit.tpl:19 templates/Admin/TemplateNews.tpl:22
+msgid "Template:"
+msgstr "Vorlage:"
+
+#: templates/Template/TemplateEdit.tpl:23 templates/Admin/TemplateNews.tpl:52
+msgid "Attributes"
+msgstr "Attribute"
+
+#: templates/Template/TemplateEdit.tpl:28
+#: templates/Template/TemplateEdit.tpl:35
+msgid "Attribute"
+msgstr "Attribut"
+
+#: templates/Template/TemplateEdit.tpl:42 templates/Admin/DataEdit.tpl:65
+#: templates/Admin/TemplateNews.tpl:59 templates/Admin/GeneralEdit.tpl:36
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/Template/TemplateEdit.tpl:43 templates/Admin/DataEdit.tpl:66
+#: templates/Admin/TemplateNews.tpl:60 templates/Admin/GeneralEdit.tpl:37
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/Template/TemplateEdit.tpl:46 templates/Admin/TemplateNews.tpl:63
+msgid "Preview"
+msgstr "Vorschau"
+
+#: templates/Template/List.tpl:1
+msgid "List Templates"
+msgstr "Vorlagen Liste"
+
+#: templates/Template/List.tpl:27
+msgid "Delete all Templates!"
+msgstr "Lösche alle Vorlagen!"
+
+#: templates/Admin/DataEdit.tpl:21 templates/Admin/TemplateNews.tpl:16
+#: templates/Admin/GeneralEdit.tpl:15
+msgid "Editor"
+msgstr "Editor"
+
+#: templates/Admin/DataEdit.tpl:24
+msgid "Church Editor"
+msgstr "Editor"
+
+#: templates/Admin/Header.tpl:11
+msgid ""
+"Sie nutzen einen zu alten InternetExplorer ! ! !      Es wird bei der "
+"Eingabe von Daten und beim Drucken zu Fehlern kommen ! Nutzen Sie bitte "
+"allgemein ein anderes Programm (z.B. Firefox, Chrome oder Opera)."
+msgstr ""
+"Sie nutzen einen zu alten InternetExplorer ! ! !      Es wird bei der "
+"Eingabe von Daten und beim Drucken zu Fehlern kommen ! Nutzen Sie bitte "
+"allgemein ein anderes Programm (z.B. Firefox, Chrome oder Opera)."
+
+#: templates/Admin/Header.tpl:12
+msgid ""
+"Bitte benutzen Sie nicht den InternetExplorer! Dies kann zu Problemen beim "
+"Drucken führen!"
+msgstr ""
+"Bitte benutzen Sie nicht den InternetExplorer! Dies kann zu Problemen beim "
+"Drucken führen!"
+
+#: templates/Admin/Main.tpl:10
+msgid "Mainpage"
+msgstr "Hauptseite"
+
+#: templates/Admin/Main.tpl:94
+msgid "Create a news from a template"
+msgstr "Erstelle eine Vermeldung aus einer Vorlage"
+
+#: templates/Admin/Main.tpl:97
+msgid "General News"
+msgstr "Allgemeines"
+
+#: templates/Admin/Main.tpl:167
+msgid "Create a general news from a template"
+msgstr "Erzeuge eine allgemeine Vermeldung aus einer Vorlage"
+
+#: templates/Admin/Main.tpl:168
+msgid "Delete all News!"
+msgstr "Lösche Vermeldungen!"
+
+#: templates/Admin/TemplateNews.tpl:19
+msgid "Template News Editor"
+msgstr "Vorlagen Vermeldungen Editor"
+
+#: templates/Admin/TemplateNews.tpl:27
+msgid "Date:"
+msgstr "Datum:"
+
+#: templates/Admin/TemplateNews.tpl:42
+msgid "Time:"
+msgstr "Uhrzeit:"
+
+#: templates/Admin/OutputManager.tpl:4
+msgid "Output"
+msgstr "Ausgabe"
+
+#: templates/Admin/OutputManager.tpl:29
+msgid "Delete all Outputs!"
+msgstr "Lösche alle Ausgabekanäle!"
+
+#: templates/Admin/GeneralEdit.tpl:18
+msgid "News Editor"
+msgstr "Vermeldung Editor"
+
+#: templates/Admin/Help.tpl:3
+msgid "Worships"
+msgstr "Gottesdinste"
+
+#: templates/Admin/Help.tpl:5
+msgid "Help"
+msgstr "Hilfe"
+
+#: templates/Admin/Help.tpl:14
+msgid "Add and manage a Church"
+msgstr "Hinzufügen und Verwalten von Gottesdiensten"
+
+#: templates/Admin/Help.tpl:15
+msgid "It is necessary for the hole module to create a church."
+msgstr ""
+
+#: templates/Admin/Help.tpl:16
+msgid ""
+"You can manage the churches by clicking the \"church\" button in the "
+"headermenue of this module.You can see a list of all Churches there. There "
+"are shown the name, the adress and an internel ID. In the right there are "
+"buttons. With the rubbish you can delete Churches, with the green peg you "
+"can add a church and with the red cross you can delete the inputboxes befor "
+"adding."
+msgstr ""
+
+#: templates/Admin/Help.tpl:18
+msgid "Add and manage a special worship"
+msgstr ""
+
+#: templates/Admin/Help.tpl:19
+msgid ""
+"For a special worship is is nacessary to create a church and a special day."
+msgstr ""
+
+#: templates/Admin/Help.tpl:20
+msgid ""
+"You can manage the special worships by clicking the \"Special worships\" "
+"button in the headermenue of this module.You can see a list of all special "
+"days there. There are shown the title, the date and the internel ID of this "
+"Day. On the right there are buttons. With the rubbish you delete the day, "
+"with the right arrow you cahnge into the special worship area, to add and "
+"manage worships for this day. You see on the page a green peg, too. With "
+"this you can add a special day, with the red cross, you can delete the "
+"inputboxes befor adding.If you have create a special day, you can click on "
+"the right arrow button. You get the special worship page for this day. The "
+"day title is shown above the table. You see here again a list. This time "
+"with all special worships of this day. There is the rubbish again, to delete "
+"the worship. With the green arrow, you can add a worship after given a title "
+"and a time(format: \"hour:minuts\") and selecting a chuch in the list for "
+"this worship. With the red cross you can delete your input."
+msgstr ""
+
+#: templates/Admin/Help.tpl:22
+msgid "Add and manage a daily worship"
+msgstr ""
+
+#: templates/Admin/Help.tpl:23
+msgid "For a daily worship is is nacessary to create a church and a daily day."
+msgstr ""
+
+#: templates/Admin/Help.tpl:24
+msgid ""
+"You can manage the daily worships by clicking the \"Daily worships\" button "
+"in the headermenue of this module. You see there again a list. This time of "
+"all daily worships. There is the rubbish again, to delete the worship. With "
+"the green arrow, you can add a worship after given a title and a "
+"time(format: \"hour:minuts\") and selecting a chuch in the list for this "
+"worship and a day, when the worships happens. With the red cross you can "
+"delete your input."
+msgstr ""
+
+#: templates/Admin/Help.tpl:26
+msgid "view"
+msgstr "Anzeige"
+
+#: templates/Admin/Help.tpl:27
+msgid ""
+"To view the worships you can use three different types on the main page. At "
+"first you can view all worships, the second type is to view only the specail "
+"worships and the third type is to view only the daily worships. You can use "
+"the URL of the viewsides to show the sides in public."
+msgstr ""
+
+#~ msgid "The added News has no name."
+#~ msgstr "Die Vermeldung hat keinen Namen"
+
+#~ msgid "The added News has no time."
+#~ msgstr "Die Vermeldung hat keine Uhrzeit"
+
+#~ msgid "The added News has no date."
+#~ msgstr "Die Vermeldung hat kein Datum"
+
+#~ msgid "Church has been removed successfully."
+#~ msgstr "Die Vermeldung wurde erfolgreich gelöscht."
+
+#~ msgid "missing $wfid"
+#~ msgstr "es fehlt $wfid"
