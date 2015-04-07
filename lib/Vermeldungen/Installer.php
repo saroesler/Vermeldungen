@@ -119,6 +119,12 @@ class Vermeldungen_Installer extends Zikula_AbstractInstaller
 				} catch (Exception $e) {
 					return LogUtil::registerError($e);
 				}
+			case "2.0.1":
+			    try {
+					DoctrineHelper::updateSchema($this->entityManager, array('Vermeldungen_Entity_Output'));
+				} catch (Exception $e) {
+					return LogUtil::registerError($e);
+				}
 			default:
 				break;
 		}

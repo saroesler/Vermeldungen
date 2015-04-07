@@ -215,9 +215,12 @@ class Vermeldungen_Controller_Admin extends Zikula_AbstractController
     	if($oid){
     		$output = $this->entityManager->find('Vermeldungen_Entity_Output', $oid);
     		$format = $output->getPageFormat();
+    		$side = $output->getDateSide();
     	}
-    	else
+    	else{
     		$format = A4;
+    		$side = "left";
+    	}
     	//get next sunday
     	$sgnaturedate = new DateTime();
     	while(($sgnaturedate->format("D"))!="Sun")
@@ -299,18 +302,34 @@ class Vermeldungen_Controller_Admin extends Zikula_AbstractController
 		$doc_date = 0;
 		
 		if($format == A4){
-			$txt = $this->view
-				->assign('datas', $datas)
-				->assign('dates', $dates)
-				->assign('heading',$heading)
-				->fetch('Print/VermeldungenA4.tpl');
+			if($side == "right"){
+				$txt = $this->view
+					->assign('datas', $datas)
+					->assign('dates', $dates)
+					->assign('heading',$heading)
+					->fetch('Print/VermeldungenA4right.tpl');
+			} else {
+				$txt = $this->view
+					->assign('datas', $datas)
+					->assign('dates', $dates)
+					->assign('heading',$heading)
+					->fetch('Print/VermeldungenA4.tpl');
+			}
 		}
 		else{
-			$txt = $this->view
-				->assign('datas', $datas)
-				->assign('dates', $dates)
-				->assign('heading',$heading)
-				->fetch('Print/VermeldungenA5.tpl');
+			if($side == "right"){
+				$txt = $this->view
+					->assign('datas', $datas)
+					->assign('dates', $dates)
+					->assign('heading',$heading)
+					->fetch('Print/VermeldungenA5right.tpl');
+			} else {
+				$txt = $this->view
+					->assign('datas', $datas)
+					->assign('dates', $dates)
+					->assign('heading',$heading)
+					->fetch('Print/VermeldungenA5.tpl');
+			}
 		}
     	
     		

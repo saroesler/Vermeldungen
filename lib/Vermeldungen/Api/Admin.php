@@ -141,4 +141,21 @@ class Vermeldungen_Api_Admin extends Zikula_AbstractApi
 		$list .="</select>";
 		return $list;
 	}
+	
+	public function getDateSideSelector($args)
+	{
+		$list = "<select id=\"{$args['name']}\" name=\"{$args['name']}\" >";
+		
+			if($args['selected']=="left")
+				$list .="<option selected value=\"left\">links</option>";
+			else
+				$list .="<option value=\"left\">links</option>";
+			
+			if($args['selected']=="right")
+				$list .="<option selected value=\"right\">rechts</option>";
+			else
+				$list .="<option value=\"right\">rechts</option>";
+		$list .="</select>";
+		return $list;
+	}
 }

@@ -27,6 +27,8 @@ function Output_Edit(id){
 	document.getElementById('OutputText'+id).style.display = "none";
 	document.getElementById('OutputPageFormatSelectorContainer'+id).style.display = "block";
 	document.getElementById('OutputPageFormat'+id).style.display = "none";
+	document.getElementById('OutputDateSideSelectorContainer'+id).style.display = "block";
+	document.getElementById('OutputDateSide'+id).style.display = "none";
 	document.getElementById('OutputEdit'+id).style.display = "none";
 	document.getElementById('OutputEditExit'+id).style.display = "inline-block";
 	document.getElementById('OutputEditSave'+id).style.display = "inline-block";
@@ -39,6 +41,9 @@ function Output_EditExit(id){
 	document.getElementById('OutputPageFormatSelectorContainer'+id).style.display = "none";
 	document.getElementById('OutputPageFormatSelector'+id).value = document.getElementById('FormatValue'+id).value;
 	document.getElementById('OutputPageFormat'+id).style.display = "inline-block";
+	document.getElementById('OutputDateSideSelectorContainer'+id).style.display = "none";
+	document.getElementById('OutputDateSideSelector'+id).value = document.getElementById('DateSideValue'+id).value;
+	document.getElementById('OutputDateSide'+id).style.display = "inline-block";
 	document.getElementById('OutputEdit'+id).style.display = "inline-block";
 	document.getElementById('OutputEditExit'+id).style.display = "none";
 	document.getElementById('OutputEditSave'+id).style.display = "none";
@@ -52,6 +57,10 @@ function Output_EditSave(id){
 	var mySelect = document.getElementById("OutputPageFormatSelector"+id);
 	var sid = mySelect.selectedIndex;
 	params['format'] = mySelect.options[sid].value;
+	
+	var dateSideSelect = document.getElementById("OutputDateSideSelector"+id);
+	var sid = dateSideSelect.selectedIndex;
+	params['dateSide'] = dateSideSelect.options[sid].value;
 	
 	new Zikula.Ajax.Request(
 		"ajax.php?module=Vermeldungen&func=Output_EditSave",
@@ -73,6 +82,13 @@ function Output_EditSave(id){
 					document.getElementById('FormatValue'+id).value = returns['format'];
 					document.getElementById('OutputPageFormat'+id).innerHTML = returns['format'];
 					document.getElementById('OutputPageFormat'+id).style.display = "inline-block";
+					
+					document.getElementById('OutputDateSideSelectorContainer'+id).style.display = "none";
+					document.getElementById('OutputDateSideSelector'+id).value = returns['dateSide'];
+					document.getElementById('DateSideValue'+id).value = returns['dateSide'];
+					document.getElementById('OutputDateSide'+id).innerHTML = returns['dateSide'];
+					document.getElementById('OutputDateSide'+id).style.display = "inline-block";
+					
 					document.getElementById('OutputEdit'+id).style.display = "inline-block";
 					document.getElementById('OutputEditExit'+id).style.display = "none";
 					document.getElementById('OutputEditSave'+id).style.display = "none";
@@ -90,6 +106,10 @@ function Output_Save()
 	var mySelect = document.getElementById("OutputPageFormatSelector");
 	var sid = mySelect.selectedIndex;
 	params['format'] = mySelect.options[sid].value;
+	
+	var dateSideSelect = document.getElementById("OutputDateSideSelector");
+	var sid = dateSideSelect.selectedIndex;
+	params['dateSide'] = dateSideSelect.options[sid].value;
 	
 	new Zikula.Ajax.Request(
 		"ajax.php?module=Vermeldungen&func=Output_save",

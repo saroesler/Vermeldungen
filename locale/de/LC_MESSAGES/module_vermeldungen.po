@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-25 20:39+0000\n"
-"PO-Revision-Date: 2015-03-25 21:42+0100\n"
+"POT-Creation-Date: 2015-04-07 09:16+0000\n"
+"PO-Revision-Date: 2015-04-07 11:17+0100\n"
 "Last-Translator: Sascha Rösler <sa-roelser@t-online.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,11 +54,11 @@ msgstr "Vermeldungen main Hooks"
 msgid "Users view"
 msgstr "Ausgabe"
 
-#: lib/Vermeldungen/Api/Template.php:15
+#: lib/Vermeldungen/Api/Template.php:15 lib/Vermeldungen/Api/Template.php:56
 msgid "The News doesn't exist!"
 msgstr "Die Vermeldung existiert nicht!"
 
-#: lib/Vermeldungen/Api/Template.php:82
+#: lib/Vermeldungen/Api/Template.php:123
 msgid "No Template selected."
 msgstr "Keine Vorlage ausgewählt"
 
@@ -129,7 +129,7 @@ msgstr "Die ID fehlt"
 
 #: lib/Vermeldungen/Controller/Ajax.php:25
 #: lib/Vermeldungen/Controller/Ajax.php:90
-#: lib/Vermeldungen/Controller/Ajax.php:290
+#: lib/Vermeldungen/Controller/Ajax.php:291
 msgid "There is no valid name!"
 msgstr "Der Name ist ungültig!"
 
@@ -151,8 +151,8 @@ msgstr "Die Vermeldung wurde erfolgreich hinzugefügt"
 #: lib/Vermeldungen/Controller/Ajax.php:178
 #: lib/Vermeldungen/Controller/Ajax.php:229
 #: lib/Vermeldungen/Controller/Ajax.php:259
-#: lib/Vermeldungen/Controller/Ajax.php:321
-#: lib/Vermeldungen/Controller/Ajax.php:351
+#: lib/Vermeldungen/Controller/Ajax.php:323
+#: lib/Vermeldungen/Controller/Ajax.php:354
 msgid "missing $id"
 msgstr "es fehlt $id"
 
@@ -171,16 +171,16 @@ msgstr "Die Vermeldung wurde erfolgreich gelöscht."
 msgid "Template has been removed successfully."
 msgstr "Die Vorlage wurde erfolgreich gelöscht."
 
-#: lib/Vermeldungen/Controller/Ajax.php:298
+#: lib/Vermeldungen/Controller/Ajax.php:300
 msgid "Output has been added successfully."
 msgstr "Die Ausgabe wurde erfolgreich hinzugefügt"
 
-#: lib/Vermeldungen/Controller/Ajax.php:334
-#: lib/Vermeldungen/Controller/Ajax.php:389
+#: lib/Vermeldungen/Controller/Ajax.php:336
+#: lib/Vermeldungen/Controller/Ajax.php:394
 msgid "Output has been removed successfully."
 msgstr "Die Ausgabe wurde erfolgreich gelöscht."
 
-#: lib/Vermeldungen/Controller/Ajax.php:362
+#: lib/Vermeldungen/Controller/Ajax.php:366
 msgid "Output has been edited successfully."
 msgstr "Das Ausgabe wurde erfolgreich bearbeitet."
 
@@ -197,7 +197,11 @@ msgstr "Name"
 msgid "Page Format"
 msgstr "Seiten Format"
 
-#: templates/Admin/OutputManager.tpl:29
+#: templates/Admin/OutputManager.tpl:15 templates/Ajax/Output.tpl:7
+msgid "Date on side"
+msgstr "Datum auf Seite"
+
+#: templates/Admin/OutputManager.tpl:31
 msgid "Delete all Outputs!"
 msgstr "Lösche alle Ausgabekanäle!"
 
@@ -324,7 +328,7 @@ msgstr "Datum:"
 msgid "Time:"
 msgstr "Uhrzeit:"
 
-#: templates/Admin/TemplateNews.tpl:52 templates/Template/TemplateEdit.tpl:23
+#: templates/Admin/TemplateNews.tpl:52 templates/Template/TemplateEdit.tpl:27
 msgid "Attributes"
 msgstr "Attribute"
 
@@ -334,16 +338,16 @@ msgstr ""
 "Wenn Sie einen Zeilenumbrauch benötigen, tippen Sie bitte  \"&lt;br /&gt;\"."
 
 #: templates/Admin/TemplateNews.tpl:60 templates/Admin/GeneralEdit.tpl:36
-#: templates/Admin/DataEdit.tpl:65 templates/Template/TemplateEdit.tpl:42
+#: templates/Admin/DataEdit.tpl:65 templates/Template/TemplateEdit.tpl:46
 msgid "Save"
 msgstr "Speichern"
 
 #: templates/Admin/TemplateNews.tpl:61 templates/Admin/GeneralEdit.tpl:37
-#: templates/Admin/DataEdit.tpl:66 templates/Template/TemplateEdit.tpl:43
+#: templates/Admin/DataEdit.tpl:66 templates/Template/TemplateEdit.tpl:47
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: templates/Admin/TemplateNews.tpl:64 templates/Template/TemplateEdit.tpl:46
+#: templates/Admin/TemplateNews.tpl:64 templates/Template/TemplateEdit.tpl:50
 msgid "Preview"
 msgstr "Vorschau"
 
@@ -401,6 +405,10 @@ msgstr "Editor"
 msgid "Id"
 msgstr "Id"
 
+#: templates/Ajax/Output.tpl:16
+msgid "links"
+msgstr "links"
+
 #: templates/User/view.tpl:13
 msgid "Admin page"
 msgstr "Administrationsseite"
@@ -422,8 +430,12 @@ msgstr ""
 "IHRE VARIABLE&#125;. Diese müssen Sie dann unten in der Attributliste "
 "angeben."
 
-#: templates/Template/TemplateEdit.tpl:28
-#: templates/Template/TemplateEdit.tpl:35
+#: templates/Template/TemplateEdit.tpl:23
+msgid "Print Template:"
+msgstr "Vorlagen"
+
+#: templates/Template/TemplateEdit.tpl:32
+#: templates/Template/TemplateEdit.tpl:39
 msgid "Attribute"
 msgstr "Attribut"
 

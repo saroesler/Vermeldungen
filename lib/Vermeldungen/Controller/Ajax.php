@@ -286,6 +286,7 @@ class Vermeldungen_Controller_Ajax extends Zikula_AbstractController
 		$ok = 0;
 		$name = FormUtil::getPassedValue('name', null, 'POST');
 		$format = FormUtil::getPassedValue('format', null, 'POST');
+		$dateSide = FormUtil::getPassedValue('dateSide', null, 'POST');
 		if(!$name)
 			$text = ($this->__("There is no valid name!"));
 		if($name)
@@ -293,6 +294,7 @@ class Vermeldungen_Controller_Ajax extends Zikula_AbstractController
 			$data = new Vermeldungen_Entity_Output();
 			$data->setName($name);
 			$data->setPageFormat($format);
+			$data->setDateSide($dateSide);
 			$this->entityManager->persist($data);
 			$this->entityManager->flush();
 			LogUtil::RegisterStatus($this->__("Output has been added successfully."));
@@ -347,6 +349,7 @@ class Vermeldungen_Controller_Ajax extends Zikula_AbstractController
 		$id = FormUtil::getPassedValue('oid', null, 'POST');
 		$name = FormUtil::getPassedValue('name', null, 'POST');
 		$format = FormUtil::getPassedValue('format', null, 'POST');
+		$dateSide = FormUtil::getPassedValue('dateSide', null, 'POST');
 		if(!isset($id)) {
 			return new Zikula_Response_Ajax_BadData($this->__('missing $id'));
 		}
@@ -355,6 +358,7 @@ class Vermeldungen_Controller_Ajax extends Zikula_AbstractController
 			$data = $this->entityManager->find('Vermeldungen_Entity_Output', $id);
 			$data->setName($name);
 			$data->setPageFormat($format);
+			$data->setDateSide($dateSide);
 			$this->entityManager->persist($data);
 			$this->entityManager->flush();
 			$result['ok'] = 1;
@@ -364,6 +368,7 @@ class Vermeldungen_Controller_Ajax extends Zikula_AbstractController
 		
 		$result['id'] = $id;
 		$result['format'] = $format;
+		$result['dateSide'] = $data->getDateSideDE();
 		$result['value'] = $name;
 		return new Zikula_Response_Ajax($result);
 	}

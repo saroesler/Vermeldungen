@@ -36,6 +36,13 @@ class Vermeldungen_Entity_Output extends Zikula_EntityAccess
      */
     private $pageformat;
     
+    /**
+     * The following are annotations which define the adress field.
+     *
+     * @ORM\Column(type="string", length="1000")
+     */
+    private $dateSide;
+    
     public function getOid()
     {
         return $this->oid;
@@ -59,5 +66,23 @@ class Vermeldungen_Entity_Output extends Zikula_EntityAccess
     public function setPageFormat($pageformat)
     {
         $this->pageformat = $pageformat;
+    }
+    
+    public function getDateSide()
+    {
+        return $this->dateSide;
+    }
+
+    public function setDateSide($dateSide)
+    {
+        $this->dateSide = $dateSide;
+    }
+    
+    public function getDateSideDE()
+    {
+        if($this->getDateSide() == "right")
+            return "rechts";
+        else
+            return "links";
     }
 }

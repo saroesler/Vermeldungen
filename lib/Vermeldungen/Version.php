@@ -15,7 +15,7 @@ class Vermeldungen_Version extends Zikula_AbstractVersion
         $meta['displayname']    = $this->__('Vermeldungen');
         $meta['description']    = $this->__("Creat Vermeldungenlist"); ///@todo description
         $meta['url']            = $this->__('Vermeldungen');
-        $meta['version']        = '2.0.1';
+        $meta['version']        = '2.0.2';
         $meta['official']       = 0;
         $meta['author']         = 'Sascha Rösler';
         $meta['contact']        = 'sa-roelser@t-online.de';

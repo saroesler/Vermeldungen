@@ -4,6 +4,7 @@
 			<th>{gt text='Id'}</th>
 			<th>{gt text='Name'}</th>
 			<th>{gt text='Page Format'}</th>
+			<th>{gt text='Date on side'}</th>
 			<th></th>
 		</tr>
 	</thead>
@@ -12,6 +13,7 @@
 				<td>0</td>
 				<td><a style="margin:0px" href="{modapifunc modname='Vermeldungen' type='user' func='view' id='0'}">{gt text = "Standard Output"}</a></td>
 				<td>A4</td>
+				<td>{gt text='links'}</td>
 				<td></td>
 			</tr>
 		{foreach from=$outputs item='output'}
@@ -27,6 +29,14 @@
 						<input type="hidden"id="FormatValue{$output->getOid()}" maxlength="100" size="60" value="{$output->getPageFormat()}"/>
 						{assign var="oid" value=$output->getOid()}
 						{modapifunc modname='Vermeldungen' type='Admin' func='getPageFormatSelector' name=OutputPageFormatSelector$oid selected=$output->getPageFormat() style="display:none;"}
+					</div>
+				</td>
+				<td >
+					<a style="margin:0px" id="OutputDateSide{$output->getOid()}">{$output->getDateSideDE()}</a>
+					<div id="OutputDateSideSelectorContainer{$output->getOid()}" style="display:none;">
+						<input type="hidden"id="DateSideValue{$output->getOid()}" maxlength="100" size="60" value="{$output->getDateSideDE()}"/>
+						{assign var="oid" value=$output->getOid()}
+						{modapifunc modname='Vermeldungen' type='Admin' func='getDateSideSelector' name=OutputDateSideSelector$oid selected=$output->getDateSide() style="display:none;"}
 					</div>
 				</td>
 				<td>
