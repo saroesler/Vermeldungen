@@ -17,9 +17,9 @@
 	display:none;
 }
 
-td{
+/*td{
 	text-align:center;
-}
+}*/
 </style>
 <form class="z-form" method="post" action="{modurl modname='Vermeldungen' type='admin' func='DataAdd'}">
 	<div id="Vermeldungsliste">

@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-10 15:45+0000\n"
+"PO-Revision-Date: 2013-08-10 17:49+0100\n"
+"Last-Translator: Sascha Rösler <sa-roelser@t-online.de>\n"
+"Language-Team: Sascha Rösler <sa-roesler@t-online.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: lib/Worship/Handler/Edit.php:39
+#, php-format
+msgid "Church with id %s not found"
+msgstr "Die Kirche mit der ID %s konnte nicht gefunden werden."
+
+#: lib/Worship/Version.php:15
+#: lib/Worship/Api/Account.php:33
+msgid "Worship"
+msgstr "Gottesdienst"
+
+#: lib/Worship/Version.php:16
+msgid "Creat Worshiplist"
+msgstr "Erstelle die Gottesdienstliste"
+
+#: lib/Worship/Version.php:17
+msgid "worship"
+msgstr "Gottesdienst"
+
+#: lib/Worship/Api/Admin.php:18
+#: lib/Worship/Api/Admin.php:19
+msgid "Main"
+msgstr "Hauptseite"
+
+#: lib/Worship/Api/Admin.php:27
+#: templates/Admin/ChurchesView.tpl:1
+msgid "Churches"
+msgstr "Kirchen"
+
+#: lib/Worship/Api/Admin.php:28
+msgid "manage and create churches"
+msgstr "Erstellen und verwalten der Kirchen"
+
+#: lib/Worship/Api/Admin.php:36
+msgid "Special worships"
+msgstr "besondere Gottesdienste"
+
+#: lib/Worship/Api/Admin.php:37
+msgid "manage and create special worships"
+msgstr "Erstellen und verwalten von besonderen Gottesdiensten"
+
+#: lib/Worship/Api/Admin.php:45
+msgid "Daily worships"
+msgstr "alltägliche Gottesdienste"
+
+#: lib/Worship/Api/Admin.php:46
+msgid "manage and create daily worships"
+msgstr "erstellen und  verwalten von alltäglichen Gottesdiensten"
+
+#: lib/Worship/Api/Admin.php:54
+#: templates/Admin/Help.tpl:4
+msgid "Help"
+msgstr "Hilfe"
+
+#: lib/Worship/Api/Admin.php:55
+msgid "Here you can get help."
+msgstr "Hier findest du Hilfe"
+
+#: lib/Worship/Controller/Admin.php:69
+msgid "The added church has no name."
+msgstr "Die hinzuzufügenden Kirche hat keinen Namen."
+
+#: lib/Worship/Controller/Admin.php:71
+msgid "The church has no adress."
+msgstr "Die Kirche hat keine Adresse."
+
+#: lib/Worship/Controller/Admin.php:78
+msgid "Church has been added successfully."
+msgstr "Es wurde eine Kirche erfolgreich hinzugefügt."
+
+#: lib/Worship/Controller/Admin.php:84
+#: lib/Worship/Controller/Admin.php:123
+#: lib/Worship/Controller/Admin.php:133
+#: lib/Worship/Controller/Admin.php:220
+#: lib/Worship/Controller/Admin.php:241
+#: lib/Worship/Controller/Admin.php:296
+#: lib/Worship/Controller/Admin.php:317
+#: lib/Worship/Controller/Admin.php:393
+msgid "ID is missing."
+msgstr "Die ID fehlt."
+
+#: lib/Worship/Controller/Admin.php:113
+#: lib/Worship/Controller/Admin.php:162
+msgid "Church has been removed successfully."
+msgstr "Die Kirche wurde erfolgreich gelöscht."
+
+#: lib/Worship/Controller/Admin.php:204
+msgid "The added day has no title. Please enter a title for this day, like 'Chrismas'."
+msgstr "Der hinzuzufügende Tag hat keinen Titel. Bitte vergeben Sie einen Titel, wie z.B.: \"Weihnachten\""
+
+#: lib/Worship/Controller/Admin.php:206
+msgid "The added day has no date to happen."
+msgstr "Der hinzuzufügende Tag hat kein Datum."
+
+#: lib/Worship/Controller/Admin.php:214
+msgid "Day has been added successfully."
+msgstr "Der Tag wurde erfolgreich hinzugefügt."
+
+#: lib/Worship/Controller/Admin.php:236
+msgid "Day has been removed successfully."
+msgstr "Der Tag wurde erfolgreich gelöscht."
+
+#: lib/Worship/Controller/Admin.php:298
+#: lib/Worship/Controller/Admin.php:374
+msgid "The added worship has no title. Please enter a title for this day, like 'Heilige Messe'."
+msgstr "Der Gottesdienst hat keinen Titel! Bitte vergeben Sie einen Titel, wie z.B.: \"Heilige Messe\""
+
+#: lib/Worship/Controller/Admin.php:300
+#: lib/Worship/Controller/Admin.php:376
+msgid "The added worship has no time to happen."
+msgstr "Der hinzuzufügende Gottesdienst hat keine Uhrzeit, zu der er beginnen soll. Bitte geben Sie eine Uhrzeit im Format \"Stunden\":\"Minuten\" an."
+
+#: lib/Worship/Controller/Admin.php:302
+#: lib/Worship/Controller/Admin.php:378
+msgid "The added worship has no church to take place."
+msgstr "Dem Gottesdienst wurde keine Kirche zugeordnet."
+
+#: lib/Worship/Controller/Admin.php:311
+#: lib/Worship/Controller/Admin.php:387
+msgid "Worship has been added successfully."
+msgstr "Der Gottesdienst wurde erfolgreich hinzugefügt."
+
+#: lib/Worship/Controller/Admin.php:321
+#: lib/Worship/Controller/Admin.php:397
+msgid "Worship has been removed successfully."
+msgstr "Der Gottesdienst wurde erfolgreich gelöscht."
+
+#: lib/Worship/Controller/Admin.php:372
+msgid "The worship has no day to happen."
+msgstr "Der Gottesdienst hat keinen Wochentag, an dem er stattfinden soll. Bitte wählen Sie einen aus. "
+
+#: templates/Admin/special_days.tpl:6
+#: templates/Admin/Help.tpl:2
+#: templates/Admin/special_worships.tpl:6
+#: templates/Admin/special_worships.tpl:10
+#: templates/Admin/daily_Worships.tpl:6
+msgid "Worships"
+msgstr "Gottesdienste"
+
+#: templates/Admin/special_days.tpl:12
+#: templates/Admin/special_worships.tpl:16
+#: templates/Admin/ChurchesView.tpl:7
+#: templates/Admin/daily_Worships.tpl:12
+msgid "ID"
+msgstr "ID"
+
+#: templates/Admin/special_days.tpl:13
+#: templates/Admin/ChurchEdit.tpl:9
+#: templates/Admin/special_worships.tpl:17
+#: templates/Admin/daily_Worships.tpl:13
+msgid "Title"
+msgstr "Titel"
+
+#: templates/Admin/special_days.tpl:14
+msgid "Date"
+msgstr "Datum"
+
+#: templates/Admin/special_days.tpl:19
+msgid "Days"
+msgstr "Tage"
+
+#: templates/Admin/Help.tpl:6
+msgid "Add and manage a Church"
+msgstr "Hinzufügen und verwalten der Kirchen"
+
+#: templates/Admin/Help.tpl:7
+msgid "It is necessary for the hole module to create a church."
+msgstr "Um das Modul zu verwenden ist en notwendig eine Kirche zu erstellen."
+
+#: templates/Admin/Help.tpl:8
+msgid "You can manage the churches by clicking the \"church\" button in the headermenue of this module.You can see a list of all Churches there. There are shown the name, the adress and an internel ID. In the right there are buttons. With the rubbish you can delete Churches, with the green peg you can add a church and with the red cross you can delete the inputboxes befor adding."
+msgstr "Sie können die Kirchen über das Menü \"Kirche\" im Modulmenü verwalten. Sie sehen dort eine Liste mit allen eingetragenen Kirchen mit Name, Adresse und einer internen ID. Mit dem Mülleimer löschen Sie die Kirche, mit dem grünen Harken fügen Sie eine Kirche nach der Eingabe hinzu. Mit dem roten Kreuz können Sie die Eingabe löschen."
+
+#: templates/Admin/Help.tpl:10
+msgid "Add and manage a special worship"
+msgstr "Erstellen und verwalten von besonderen Gottesdiensten"
+
+#: templates/Admin/Help.tpl:11
+msgid "For a special worship is is nacessary to create a church and a special day."
+msgstr "Für einen besonderen Gottesdienst ist es notwendig zuerst eine Kirche und einen besonderen Tag zu erstellen."
+
+#: templates/Admin/Help.tpl:12
+msgid "You can manage the special worships by clicking the \"Special worships\" button in the headermenue of this module.You can see a list of all special days there. There are shown the title, the date and the internel ID of this Day. On the right there are buttons. With the rubbish you delete the day, with the right arrow you cahnge into the special worship area, to add and manage worships for this day. You see on the page a green peg, too. With this you can add a special day, with the red cross, you can delete the inputboxes befor adding.If you have create a special day, you can click on the right arrow button. You get the special worship page for this day. The day title is shown above the table. You see here again a list. This time with all special worships of this day. There is the rubbish again, to delete the worship. With the green arrow, you can add a worship after given a title and a time(format: \"hour:minuts\") and selecting a chuch in the list for this worship. With the red cross you can delete your input."
+msgstr "Sie können die speziellen Gottesdienste über den Eintrag \"besondere Gottesdienste\" im Modulmenü verwalten. Zuerst sehen dort dann eine Liste aller besonderen Tage mit Titel, Datum und einer internen ID. Rechts davon sind Knöpfe. Mit dem Mülleimer löschen Sie einen Tag. mit dem rechten Pfeil gehen Sie in das Gottesdienstmenü für diesem Tag. Dort können Sie diese dann verwalten. Auf der Seite befindet sich auch wieder ein grüner Harken, um eingegebene Tage hinzuzufügen. Mit dem roten Kreuz setzen Sie ihre Eingabe wieder zurück. Wenn Sie bei einem Tag dann auf den Pfeil gehen, kommen Sie wie schon erwähnt in das Menü für besondere Gottesdienste für diesen Tag. Über der Tabelle sehen Sie noch einmal den Titel und das Datum von dem ausgewählten Tag. Auch gibt es hier wieder eine Liste. Diesmal mit allen besonderen Gottesdiensten für diesen Tag. Mit dem Müll können diese wieder gelöscht werden. Der grüne Harken fügt eine Eingabe hinzu, und das rote Kreuz löscht die Eingabefelder. Um einen Gottesdeinst hinzuzufügen muss ein Titel und eine Zeit im Format \"Stunden: Minuten \" eingegeben werden. "
+
+#: templates/Admin/Help.tpl:14
+msgid "Add and manage a daily worship"
+msgstr "erstellen und  verwalten von alltäglichen Gottesdiensten"
+
+#: templates/Admin/Help.tpl:15
+msgid "For a daily worship is is nacessary to create a church and a daily day."
+msgstr "Für einen alltäglichen Gottesdienst ist es notwendig zuerst eine Kirche und einen alltäglichen Tag zu erstellen."
+
+#: templates/Admin/Help.tpl:16
+msgid "You can manage the daily worships by clicking the \"Daily worships\" button in the headermenue of this module. You see there again a list. This time of all daily worships. There is the rubbish again, to delete the worship. With the green arrow, you can add a worship after given a title and a time(format: \"hour:minuts\") and selecting a chuch in the list for this worship and a day, when the worships happens. With the red cross you can delete your input."
+msgstr "Sie können die alltäglichen Gottesdienste über \"alltäglichen  Gottesdienste\" im Modulmenü verwalten. Dort sehen Sie dann wieder eine Liste. Diesmal von allen alltäglchen Gottesdiensten.  Auch gibt es wieder einen Mülleimer, um Gottesdienste zu löschen. Mit dem grünen Harken können die eine Kirche nach Eingabe einen Titels, einer Zeit im Format \"Sunden:Minuten\" und nach der Auswahl einer Kirche und eines Wochentages hinzufügen. Mit dem roten Kreuz können Sie Ihre Eingabe vor dem Hinzufügen löschen."
+
+#: templates/Admin/Help.tpl:18
+msgid "view"
+msgstr "Ansichten"
+
+#: templates/Admin/Help.tpl:19
+msgid "To view the worships you can use three different types on the main page. At first you can view all worships, the second type is to view only the specail worships and the third type is to view only the daily worships. You can use the URL of the viewsides to show the sides in public."
+msgstr "Es gibt drei Arten, Gottesdienste anzuzeigen: 1. alle Gottesdienste anzeigen, 2. nur die Besonderen und 3. nur die Normalen anzeigen. Um die Anzeigen den Besuchern der Seite zur Verfügung zu stellen, können Sie die URL verwenden."
+
+#: templates/Admin/ChurchEdit.tpl:1
+msgid "Editor"
+msgstr "Bearbeiten"
+
+#: templates/Admin/ChurchEdit.tpl:4
+msgid "Church Editor"
+msgstr "Kirche bearbeiten"
+
+#: templates/Admin/ChurchEdit.tpl:12
+#: templates/Admin/ChurchesView.tpl:9
+msgid "Adress"
+msgstr "Adresse"
+
+#: templates/Admin/ChurchEdit.tpl:30
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/Admin/ChurchEdit.tpl:31
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/Admin/special_worships.tpl:18
+#: templates/Admin/daily_Worships.tpl:16
+msgid "Time"
+msgstr "Zeit"
+
+#: templates/Admin/special_worships.tpl:19
+#: templates/Admin/daily_Worships.tpl:14
+msgid "Church"
+msgstr "Kirche"
+
+#: templates/Admin/special_worships.tpl:54
+msgid "Back to special days"
+msgstr "Zurück zur Tagesverwaltung"
+
+#: templates/Admin/Main.tpl:1
+msgid "Admin main page"
+msgstr "Administration Startseite"
+
+#: templates/Admin/Main.tpl:3
+msgid "Views:"
+msgstr "Anzeigen:"
+
+#: templates/Admin/Main.tpl:4
+msgid "all worships"
+msgstr "alle Gottesdienste"
+
+#: templates/Admin/Main.tpl:5
+msgid "special worships"
+msgstr "besondere Gottesdienste"
+
+#: templates/Admin/Main.tpl:6
+msgid "daily worships"
+msgstr "alltägliche Gottesdienste"
+
+#: templates/Admin/ChurchesView.tpl:8
+msgid "Name"
+msgstr "Name"
+
+#: templates/Admin/daily_Worships.tpl:15
+msgid "Weekday"
+msgstr "Wochentag"
+
+#: templates/User/all.tpl:38
+#: templates/User/daily.tpl:19
+#: templates/User/special.tpl:21
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#~ msgid "Ministrants"
+#~ msgstr "Ministranten"
+
+#~ msgid ""
+#~ "You can manage the special worships by clicking the \"Special worships\" "
+#~ "button in the headermenue of this module. You see there again a list. "
+#~ "This time of all daily worships. There is the rubbish again, to delete "
+#~ "the worship. With the green arrow, you can add a worship after given a "
+#~ "title and a time(format: \"hour:minuts\") and selecting a chuch in the "
+#~ "list for this worship and a day, when the worships happens. With the red "
+#~ "cross you can delete your input."
+#~ msgstr ""
+#~ "Sie können die speziellen Gottesdienste über den \"spezielle Gottesdienste"
+#~ "\" im Modulmenü verwalten. Dort sehen Sie dann wieder eine Liste. "
+
+#~ msgid ""
+#~ "You can manage the churches by clicking the \"church\" button in the "
+#~ "headermenue of this module."
+#~ msgstr ""
+#~ "Sie können die Kirchen verwalten, wenn Sie auf \"Kirchen\" im Modulmenü "
+#~ "klicken."
