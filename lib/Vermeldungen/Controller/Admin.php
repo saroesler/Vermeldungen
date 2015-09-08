@@ -341,8 +341,19 @@ class Vermeldungen_Controller_Admin extends Zikula_AbstractController
 		// output the HTML content
 		//$pdf->writeHTML($txt, true, false, true, false, '');
 		foreach($general as $generales){
-			if($generales->getTid() == 0)
-				$pdf->Write(0, $generales->getGname()."\n\n", '', 0, '', true, 0, false, false, 0);
+			if($generales->getTid() == 0){
+			//$genera->getGname()|notifyfilters:'vermeldungen.filter_hooks.users_view'}
+				$txt = $this->view
+					->assign('generales',$generales)
+					->fetch('Print/shortGeneral.tpl');
+				echo $txt;
+				$txt = str_replace('<center>', "<div style=\"text-align:center;\">", $txt);	
+				$txt = str_replace('<\center>', "<\div>", $txt);	
+				
+				$pdf->writeHTML($txt, true, false, true, false, '');
+				$pdf->writeHTML("<div style=\"margin-left:20px\">                  test</div>", true, false, true, false, '');
+				$pdf->Write(0, "\tufo\n\n", '', 0, '', true, 0, false, false, 0);
+			}
 			else
 				$pdf->writeHTML(ModUtil::apiFunc('Vermeldungen', 'Template', 'renderPrintTemplate', array('nid' => $generales->getGid(), 'dbtype'=>'g')), true, false, true, false, '');
 		}

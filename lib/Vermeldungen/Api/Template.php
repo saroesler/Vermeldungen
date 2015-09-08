@@ -43,8 +43,9 @@ class Vermeldungen_Api_Template extends Zikula_AbstractApi
 		foreach($fields as $field){
 			$attribute = $this->entityManager->getRepository('Vermeldungen_Entity_NewsField')->findBy(array("tfid"=> $field->getTfid(), "nid"=> $news->getId() ));
 			$ersatz = "";
-			if(isset ($attribute[0]))
+			if(isset ($attribute[0])){
 				$ersatz = $attribute[0]->getValue();
+			}
 			$result = str_replace("{".$field->getName()."}", $ersatz, $result);
 		}
 		return $result;
